@@ -194,3 +194,32 @@ button{
 .notfound{
     display: none;
 }
+
+@media(max-width:426px){
+    .header{
+        justify-content: space-between;
+        height: 55px;
+    }
+    #search{
+        display: none;
+    }
+    #filters{
+        width: 40%;
+        margin: 0 0.5rem;
+    }
+    .gallery{
+        padding: 78px 0.5rem 0 0.5rem;
+        grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+        grid-template-rows: repeat(auto-fill, minmax(100px, 1fr));
+    }
+    .lightbox img{
+        height: 40%;
+        width: 70%;
+        border-radius: 1rem;
+    }
+    .nav div{
+        width: 30px;
+        height: 30px;
+        border-radius: 0.5rem;
+    }
+}
