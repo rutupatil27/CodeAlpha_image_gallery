@@ -209,8 +209,8 @@ button{
     }
     .gallery{
         padding: 78px 0.5rem 0 0.5rem;
-        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-        grid-template-rows: repeat(auto-fill, minmax(200px, 1fr));
+        grid-template-columns: repeat(auto-fill, minmax(148px, 1fr));
+        grid-template-rows: repeat(auto-fill, minmax(120px, 1fr));
     }
     .lightbox img{
         height: auto;
@@ -227,5 +227,6 @@ button{
         justify-content: center;
     }
 }
+
 
 
