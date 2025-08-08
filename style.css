@@ -217,6 +217,8 @@ button{
     .lightbox img{
         height: auto;
         width: 100%;
+        max-width: 98%;
+        max-height: 100%;
         border-radius: 1rem;
     }
     .nav div{
@@ -229,6 +231,7 @@ button{
         justify-content: center;
     }
 }
+
 
 
 
