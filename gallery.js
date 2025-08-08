@@ -47,8 +47,14 @@ close.addEventListener('click',()=>{
     lightbox.style.display="none";
 });
 
+document.addEventListener('keydown',(e)=>{
+    if(e.key==="Escape"){
+        lightbox.style.display="none";
+    }
+});
+
 function nextnav(){
-    if(visibleImgs.length>currind+1){
+    if(curr>currind+1 && currind + 1 < visibleImgs.length){
         currind++;
         let nextimg= visibleImgs[currind];
         openLightbox(nextimg,currind);
@@ -64,12 +70,21 @@ function prevnav(){
 }
 
 next.addEventListener('click',nextnav);
-next.addEventListener('keydown',(e)=>{
-    if(e.key==="RightArrow"){
-        nextnav();
+document.addEventListener('keydown',(e)=>{
+    if(lightbox.style.display=="flex"){
+        if(e.key==="ArrowRight"){
+            nextnav();
+        }
     }
 });
 prev.addEventListener('click',prevnav);
+document.addEventListener('keydown',(e)=>{
+    if(lightbox.style.display=="flex"){
+        if(e.key==="ArrowLeft"){
+            prevnav();
+        }
+    }
+});
 
 function filtering(filter){ 
     curr=0;
@@ -110,3 +125,4 @@ search.addEventListener('keydown',(e)=>{
         searching();
     } 
 });
+
