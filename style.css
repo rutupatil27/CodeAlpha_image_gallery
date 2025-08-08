@@ -213,13 +213,17 @@ button{
         grid-template-rows: repeat(auto-fill, minmax(100px, 1fr));
     }
     .lightbox img{
-        height: 40%;
-        width: 70%;
+        height: auto;
+        width: 100%;
         border-radius: 1rem;
     }
     .nav div{
         width: 30px;
         height: 30px;
         border-radius: 0.5rem;
+    }
+    .nav{
+        bottom: 10%;
+        justify-content: center;
     }
 }
