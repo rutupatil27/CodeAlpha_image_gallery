@@ -35,7 +35,7 @@ It allows users to browse images by category, search for specific ones, and view
 ---
 
 ## 📷 Preview  
-![PixyView Screenshot](./images/img_gallery_preview.png)
+![PixyView Screenshot](gallery_ss.png)
 
 ---
 
