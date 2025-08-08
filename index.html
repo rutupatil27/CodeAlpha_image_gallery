@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="header">
+        <div id="logo">
+            <h1>PixyView</h1>
+        </div>
+        <div id="search">
+            <input type="text" placeholder="Search for images..." id="search-input">
+            <i class="fa-solid fa-magnifying-glass search"></i>
+        </div>
+        <div id="filters">
+            <select name="filter" id="filter">
+                <option value="default" disabled selected hidden>Filters</option>
+                <option value="all">All</option>
+                <option value="ocean">Ocean</option>
+                <option value="nature">Nature</option>
+                <option value="food">Food</option>
+                <option value="pets">Pets</option>
+                <option value="decor">Home Decor</option>
+            </select>
+            <i class="fa-solid fa-filter"></i>
+        </div>
+    </div>
+    <div class="gallery">
+        <div class="images nature"><img src="./images/nature1.jpg" alt="" loading="lazy" class="gridimg"></div>      
+        <div class="images pets"><img src="./images/pets3.jpg" alt="" loading="lazy" class="gridimg"></div>    <div class="images nature"><img src="./images/nature3.jpg" alt="" loading="lazy" class="gridimg"></div>
+        <div class="images pets"><img src="./images/pets5.jpg" alt="" loading="lazy" class="gridimg"></div>
+        <div class="images food"><img src="./images/food3.jpg" alt="" loading="lazy" class="gridimg"></div>
+        <div class="images decor"><img src="./images/homedecor4.jpg" alt="" loading="lazy" class="gridimg"></div>
+        <div class="images pets"><img src="./images/pets2.jpg" alt="" loading="lazy" class="gridimg"></div><div class="images ocean"><img src="./images/ocean1.jpg" alt="" loading="lazy" class="gridimg"></div>
+        <div class="images ocean"><img src="./images/ocean2.jpg" alt="" loading="lazy" class="gridimg"></div>
+        <div class="images food"><img src="./images/food1.jpg" alt="" loading="lazy" class="gridimg"></div>
+        <div class="images ocean"><img src="./images/ocean4.jpg" alt="" loading="lazy" class="gridimg"></div>
+        <div class="images decor"><img src="./images/homedecor3.jpg" alt="" loading="lazy" class="gridimg"></div>
+        <div class="images pets"><img src="./images/pets1.jpg" alt="" loading="lazy" class="gridimg"></div>
+        <div class="images food"><img src="./images/food4.jpg" alt="" loading="lazy" class="gridimg"></div>
+        <div class="images pets"><img src="./images/pets4.jpg" alt="" loading="lazy" class="gridimg"></div> 
+        <div class="images decor"><img src="./images/homedecor1.jpg" alt="" loading= "lazy" class="gridimg"></div>
+        <div class="images food"><img src="./images/food2.jpg" alt="" loading="lazy" class="gridimg"></div>
+        <div class="images nature"><img src="./images/nature4.jpg" alt="" loading="lazy" class="gridimg"></div>       
+        <div class="images food"><img src="./images/food5.jpg" alt="" loading="lazy" class="gridimg"></div>
+        <div class="images ocean"><img src="./images/ocean5.jpg" alt="" loading="lazy" class="gridimg"></div>
+        <div class="images decor"><img src="./images/homedecor2.jpg" alt="" loading="lazy" class="gridimg"></div>
+        <div class="images nature"><img src="./images/nature2.jpg" alt="" loading="lazy" class="gridimg"></div>
+        <div class="images ocean"><img src="./images/ocean3.jpg" alt="" loading="lazy" class="gridimg"></div>       
+    </div>
+    <div class="footer">
+        <button class="load">Load More...</button>
+    </div>
+    <div class="lightbox">
+        <i class="fa-solid fa-square-xmark close"></i>
+        <img src="" alt="image">
+        <div class="nav">
+            <div><i class="fa-solid fa-angle-left prev"></i></div>
+            <div><i class="fa-solid fa-angle-right next"></i></div>
+        </div>
+    </div>
+    <div class="notfound">
+        <h1>Search Result Not Found :(</h1>
+        <p>Try searching with different keywords or check the filters.</p>
+    </div>
+    <script src="gallery.js"></script>
+</body>
+</html>
