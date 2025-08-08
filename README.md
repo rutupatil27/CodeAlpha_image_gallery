@@ -37,7 +37,3 @@ It allows users to browse images by category, search for specific ones, and view
 ## 📷 Preview  
 ![PixyView Screenshot](gallery_ss.png)
 
----
-
-## 📜 License  
-This project is licensed under the **MIT License**.  
