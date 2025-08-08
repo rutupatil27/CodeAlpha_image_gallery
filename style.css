@@ -154,7 +154,8 @@ button{
 .lightbox img{
     height: auto;
     max-height: 90vh;
-    width: 70%;
+    width: auto;
+    max-width: 80vw;
     border-radius: 1rem;
 }
 
@@ -228,6 +229,7 @@ button{
         justify-content: center;
     }
 }
+
 
 
 
